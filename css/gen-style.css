@@ -1,17 +1,56 @@
 /* General */
     /* Plantilla genérica para la página principal y dependencias*/
-
+    body{
+        /*font-family: 'PT-Sans', sans-serif;*/
+        /*font-family: 'Josefin Sans', sans-serif;*/
+        font-family: 'Rubik', sans-serif;
+    }
 /* Header */
     header{
         /*colores candidatos #17c89c ; #f7f7f7*/
         background-color: #f7f7f7;
         padding-top: 25px;
     }
+    .social-header{
+        margin-top: 50px;
+    }
+    .social-header a {
+        color:#17c89c;
+    }
+    .social-header a .fa-inverse{
+        color:#ffffff;
+    }
+    /*Personalización del Menú bar: */
+    .menu-bar{
+        background-color: #17c89c;
+        margin-top: 2px;
+        padding-bottom: 2px;      
+    }
+    .menu-bar a{
+        color:#ffffff;
+        font-size: 15px;
+        font-weight: 400;
+    }
+    .menu-bar a :hover {
+        /*Cuando se pase por encima de un enlace:*/
+        text-decoration: none;
+        color:rgb(105, 218, 31);
+    }
+    .menu-list{
+        padding: 12px 0;
+        margin-bottom: 0;
+    }
+    .menu-list > li:not(:last-child){
+        margin-right: 40px;
+    }
+
 /* Content */
+/*Barra superior de la pagina
 .supbar {
-    /*Barra superior de la pagina*/
+    
     background: #17c89c;
     padding-bottom: 10px;
     padding-top: 10px;
 }
+*/
 /* Footer */
