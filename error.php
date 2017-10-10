@@ -6,6 +6,6 @@
 </head>
 
 <body>
-<h1 align="center">ERROR: No hay usuarios activos</h1>
+<h1 align="center">ERROR: no existen usuarios activos</h1>
 </body>
 </html>

@@ -1,0 +1,17 @@
+/* General */
+    /* Plantilla genérica para la página principal y dependencias*/
+
+/* Header */
+    header{
+        /*colores candidatos #17c89c ; #f7f7f7*/
+        background-color: #f7f7f7;
+        padding-top: 25px;
+    }
+/* Content */
+.supbar {
+    /*Barra superior de la pagina*/
+    background: #17c89c;
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+/* Footer */
