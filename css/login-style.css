@@ -1,0 +1,31 @@
+
+.head-log{
+    
+}
+
+.body-log{
+    background-color: rgb(12, 177, 163); 
+    padding-top: 10px;
+    padding-bottom: 10px;
+    height:270px;
+}
+/*.body-log .form-control{
+    margin-top: 5px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height:50px;
+}*/
+.body-log .input-group{
+    margin-top: 20px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    height:50px;
+}
+.body-log .btn{
+    margin-top: 30px;
+    
+}
+
+.body-log h2{
+    font-size: 20px;
+}

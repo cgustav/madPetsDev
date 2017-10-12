@@ -55,13 +55,13 @@
 /* Content */
     /*carousel*/
     #slider-home{
-        margin-bottom: 50px;
+        margin-bottom: 5px;
 
     }
     .carousel-caption{
         /*Para modificar el color de fondo en textos de los slides*/
         background-color: rgba(5, 48, 49, 0.75);
-        height: 400px;
+        height: 600px;
         left: 30px;
         top: 0;
         padding: 30px 45px;
@@ -89,14 +89,32 @@
         
     }
     .carousel-caption a {
+        margin-top: 20px;
         border-radius: 0;
         font-weight: bold;
         color: #f8faf9;
         border: none;
         
     }
-    .btn-primary {
-        color: #f7f7f7;
+    /*Personalizacón de los separadores del body*/
+    .separador-bar{
+        background-color: #17c89c;
+        padding-top: 25px;
+        padding-bottom: 25px;
+        margin-top: 20px;
+        margin-bottom: 30px;
+        text-align: center;
+    }
+    .separador-bar h3{
+        margin-top: 10px;
+        color: #ffffff;
+        font-size: 30px;
+        line-height: 25px;
+    }
+    
+    .goomap{
+        /*Google Map*/
+        align-content: center;
     }
 /*Barra superior de la pagina
 .supbar {
