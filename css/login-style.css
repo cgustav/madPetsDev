@@ -29,3 +29,12 @@
 .body-log h2{
     font-size: 20px;
 }
+
+.showhint{
+    margin-top: 5px;
+    
+}
+.showhint h2 {
+    height: 5px;
+    color: rgb(121, 22, 15);
+}

@@ -3,7 +3,8 @@
     body{
         /*font-family: 'PT-Sans', sans-serif;*/
         /*font-family: 'Josefin Sans', sans-serif;*/
-        font-family: 'Rubik', sans-serif;
+        /*font-family: 'Rubik', sans-serif;*/
+        font-family: 'Lato', sans-serif;
     }
 /* Header */
     header{
@@ -30,12 +31,12 @@
         background-color: #17c89c;
         margin-top: 2px;
         padding-bottom: 2px;
-        text-align: center;  
+        text-align: center; 
           
     }
     .menu-bar a{
         color:#ffffff;
-        font-size: 15px;
+        font-size: 18px;
         font-weight: 400;
          
     }

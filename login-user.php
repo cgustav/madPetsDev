@@ -40,10 +40,10 @@ function enviar(){
 <body>
 <div class="container formu-log">
 <div class="row">
-    <div class="col-md-4 text-md-center">
+    <div class="col-md-3 text-md-center">
         
     </div>
-    <div class="col-md-4 text-md-center">
+    <div class="col-md-6 text-md-center">
         <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
             <div class="container head-log">
                 <div class="logo">
@@ -64,7 +64,7 @@ function enviar(){
                     <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña"/>
                 </div>
                 <div class="form-group">
-                    <input type="submit" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-info btn-block" onclick="enviar();" />
+                    <input type="submit" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-block" onclick="enviar();" />
                 </div>
                 <div class="container showhint">
                     <!--Si Usuario y contraseña no coinciden: -->
@@ -80,7 +80,7 @@ function enviar(){
             </div>    
     </form>
     </div>
-            <div class="col-md-4 text-md-center">
+            <div class="col-md-3 text-md-center">
 
             </div>
 
@@ -92,4 +92,5 @@ function enviar(){
         crossorigin="anonymous"></script>
     <script src="js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
+
 </html>

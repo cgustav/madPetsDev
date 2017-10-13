@@ -6,8 +6,18 @@ if(isset($_SESSION['usuario'])){
 <!doctype html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>Documento sin título</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Principal MADpets</title>
+<!-- BOOTSTRAP CSS-->
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<!-- Main CSS -->
+<link rel="stylesheet" href="css/gen-style.css">
+<!-- Font Js -->
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<!-- Icons Js -->
+<script src="https://use.fontawesome.com/025d1f53df.js"></script>
 </head>
 
 <body>
