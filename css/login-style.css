@@ -29,15 +29,18 @@
 .body-log h2{
     font-size: 20px;
 }
-
+.formu-log{
+    margin-top: 60px;
+}
 .showhint{
-    margin-top: 5px;
-    
+    margin-top: 2px;
+    height: 40px;
 }
 .showhint h2 {
-    height: 5px;
+    height: 2px;
     color: rgb(121, 22, 15);
 }
+
 /*footer */
 .footer-log{
     padding-top: 2px;

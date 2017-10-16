@@ -135,6 +135,6 @@ if(isset($_SESSION['usuario'])){
 </html>
 <?php 
 }else{
-	header("Location:error.hmtl");
+	header("Location:error.html");
 	} 
 ?>

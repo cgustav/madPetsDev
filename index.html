@@ -82,13 +82,16 @@
                 <!-- contenido en texto y lista del menu bar principal -->
                 <ul class="menu-list list-inline">
                     <li class="list-inline-item">
-                        <a href="#">Inicio</a>
+                        <a href="index.html">Inicio</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Quienes somos</a>
+                        <a href="#separ1">Quienes somos</a>
                     </li>
                     <li class="list-inline-item">
-                        <a href="#">Reserva tu hora online</a>
+                        <a href="#separ2">Dónde encontrarnos</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#separ3">Reserva tu hora online</a>
                     </li>
                     <li class="list-inline-item">
                         <a href="login-user.php">Ingresar</a>
@@ -128,7 +131,8 @@
         </div>
     </div>
     <!-- Info MadPets -->
-    <div class="container separador-bar">
+
+    <div class="container separador-bar" id="separ1">
         <div class="row">
             <div class="col-md-12 text-md-center">
                 <h3>Quienes somos</h3>
@@ -136,29 +140,29 @@
         </div>
     </div>
     <!-- Dónde encontrarnos -->
-    <div class="container separador-bar">
+    <div class="container separador-bar" id="separ2">
         <div class="row">
             <div class="col-md-12 text-md-center">
                 <h3>Dónde encontrarnos</h3>
             </div>
         </div>
     </div>
-    <div class="container goomap"></div>
-    <div class="row">
-        <div class="col-md-3">
-            <!--Contenido de la primera columna -->
-        </div>
-        <div class="col-md-6">
-            <!--Contenido de la segunda columna -->
-            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1729.30417410764!2d-71.25643739821919!3d-29.904383802198026!3m2!1i1024
+    <div class="container goomap" id="separ3">
+        <div class="row">
+            <div class="col-md-3">
+                <!--Contenido de la primera columna -->
+            </div>
+            <div class="col-md-6">
+                <!--Contenido de la segunda columna -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1729.30417410764!2d-71.25643739821919!3d-29.904383802198026!3m2!1i1024
                     !2i768!4f13.1!3m3!1m2!1s0x0%3A0x42ede8b0d3374958!2sJardin+del+Coraz%C3%B3n!5e0!3m2!1ses!2scl!4v1507735250460"
-                width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
-        </div>
-        <div class="col-md-3">
-            <!--Contenido de la tercera columna -->
-        </div>
+                    width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+            <div class="col-md-3">
+                <!--Contenido de la tercera columna -->
+            </div>
 
-    </div>
+        </div>
     </div>
     <!-- Reserva tu hora online -->
     <div class="container separador-bar">
@@ -181,4 +185,5 @@
     <script src="js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 <div class="container flex-box"></div>
+
 </html>

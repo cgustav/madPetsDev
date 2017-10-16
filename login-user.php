@@ -47,15 +47,17 @@ function enviar(){
         <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
             <div class="container head-log">
                 <div class="logo">
-                    <img src="images/madpets2ndlogo.png" tag="madpets png">
+                    <a href="index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
                 </div>
             </div>
             <div class="container body-log">
                 <div class="input-group">
+                           
                     <span class="input-group-addon">
                         <i class="fa fa-user"></i>
                     </span>
                     <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control" placeholder="Usuario/Correo electrónico"/>
+                    
                 </div>
                 <div class="input-group">
                     <span class="input-group-addon">
@@ -69,11 +71,11 @@ function enviar(){
                 <div class="container showhint">
                     <!--Si Usuario y contraseña no coinciden: -->
                 <?php
-                    if (isset($_GET['error'])) {
+                if (isset($_GET['error'])) {
                 ?>
-                    <div class="alert alert-danger" role="alert">
-                        Error usuario y/o contraseña!
-                    </div>
+                <div class="alert alert-danger" role="alert">
+                    Error usuario y/o contraseña!
+                </div>
                 </div>
                 <?php
                 }
