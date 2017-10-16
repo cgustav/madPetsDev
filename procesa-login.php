@@ -12,7 +12,7 @@
   if($total!=0){//Si se han encontrado coincidencias:
 	  session_start(); //se da inicio a una sesión
 	  //con sus respectivas variables de sesión
-	  $_SESSION['usuario']=$datos['nombre']." ".$datos['ap_paterno']." ".$datos['ap_materno'];	 
+	  $_SESSION['usuario']=$datos['nombre']; //." ".$datos['ap_paterno']." ".$datos['ap_materno'];	 
 	  $_SESSION['tipo']=$datos['descripcion'];
 	  $_SESSION['idUsuario']=$datos['id'];
 	  header("Location: principal.php");

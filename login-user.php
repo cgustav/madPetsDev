@@ -71,7 +71,9 @@ function enviar(){
                 <?php
                     if (isset($_GET['error'])) {
                 ?>
-                    <h2>Error de Usuario y/o Password</h2>
+                    <div class="alert alert-danger" role="alert">
+                        Error usuario y/o contraseña!
+                    </div>
                 </div>
                 <?php
                 }
@@ -86,6 +88,15 @@ function enviar(){
 
         </div>
     </div>
+    <footer class="footer-log">
+        <div class="container">
+            <div class="col-sd-12 text-md-center">
+                <span class="text-muted">
+                    <h2>¿No tienes una cuenta aún?</h2>
+                </span>
+            </div>
+        </div>
+    </footer>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
