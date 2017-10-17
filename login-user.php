@@ -66,7 +66,7 @@ function enviar(){
                     <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña"/>
                 </div>
                 <div class="form-group">
-                    <input type="submit" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-block" onclick="enviar();" />
+                    <input type="button" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-block" onclick="enviar();" />
                 </div>
                 <div class="container showhint">
                     <!--Si Usuario y contraseña no coinciden: -->

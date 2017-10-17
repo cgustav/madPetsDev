@@ -14,6 +14,11 @@ if(isset($_SESSION['usuario'])){
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <!-- Main CSS -->
     <link rel="stylesheet" href="css/gen-style.css">
+    <?php
+     if(isset($_SESSION['tipo'])){
+        
+     }
+    ?>
     <!-- Font Js -->
     <!--<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
