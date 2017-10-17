@@ -11,18 +11,16 @@ if(isset($_SESSION['usuario'])){
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Principal MADPets</title>
     <!-- BOOTSTRAP CSS-->
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="css/gen-style.css">
+    <link rel="stylesheet" href="../css/gen-style.css">
     <?php
      if(isset($_SESSION['tipo'])){
         
      }
     ?>
     <!-- Font Js -->
-    <!--<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">-->
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
-    <!--<link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">-->
     <!-- Icons Js -->
     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
 </head>
@@ -33,7 +31,7 @@ if(isset($_SESSION['usuario'])){
             <div class="row">
                 <div class="col-md-6">
                     <!-- Logo -->
-                    <img src="images/madpets1stlogo.png" alt="madpets" width="100" height="100" />
+                    <img src="../images/madpets1stlogo.png" alt="madpets" width="100" height="100" />
                 </div>
                 <div class="col-md-6">
                     <!-- Iconos redes sociales -->
@@ -115,7 +113,7 @@ if(isset($_SESSION['usuario'])){
                                     <a class="dropdown-item " href="#">Mi perfil</a>
                                     <a class="dropdown-item " href="#">Mis Documentos</a>
                                     <a class="dropdown-item " href="#">Agenda</a>
-                                    <a class="dropdown-item " href="cerrarsesion.php">Salir</a>
+                                    <a class="dropdown-item " href="../cerrarsesion.php">Salir</a>
                                 </div>
                             </li>
                         </ul>
@@ -134,7 +132,7 @@ if(isset($_SESSION['usuario'])){
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
-    <script src="js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+    <script src="../js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
 </body>
 
 </html>

@@ -1,5 +1,63 @@
-/*Header*/
 
+body{
+    
+    font-family: 'Lato', sans-serif;
+}
+/* Header */
+header{
+    /*colores candidatos #17c89c ; #f7f7f7*/
+    background-color: #f7f7f7;
+    padding-top: 25px;
+}
+.social-header{
+    /* Para cambiar posicion de los iconos de redes sociales */
+    margin-top: 50px;
+    text-align: right;
+    padding-right: 80px;
+}
+.social-header a {
+    color:#106bb4;
+    
+}
+.social-header a .fa-inverse{
+    color:#ffffff;
+    
+}
+/*Personalización del Menú bar: */
+.menu-bar{
+    background-color: #106bb4;
+    margin-top: 2px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    text-align: center; 
+      
+}
+.menu-bar a{
+    color:#ffffff;
+    font-size: 18px;
+    font-weight: 400;
+     
+}
+.menu-bar a :hover {
+    /*Cuando se pase por encima de un enlace:*/
+    text-decoration: none;
+    color:rgb(105, 218, 31);
+}
+.menu-list{
+    padding: 12px 0;
+    margin-bottom: 0;
+}
+.menu-list > li:not(:last-child){
+    margin-right: 40px;
+}
+/*
+.dropdown{
+    align-self: center;
+}
+*/
+.dropdown-menu a{
+ color: #8d8a8a;
+}
 /*Body*/
 
 /*Components*/

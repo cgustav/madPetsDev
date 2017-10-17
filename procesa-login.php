@@ -15,10 +15,10 @@
 	  $_SESSION['usuario']=$datos['nombre']; //." ".$datos['ap_paterno']." ".$datos['ap_materno'];	 
 	  $_SESSION['tipo']=$datos['descripcion'];
 	  $_SESSION['idUsuario']=$datos['id'];
-	  header("Location: principal.php");
-	   }
-	   else
-	   {
+	   header("Location: redirect.php");
+  	}
+  	else
+  	{
 	   header("Location: login-user.php?error");
-	   }	  		
+	}	  		
 ?>
