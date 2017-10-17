@@ -1,20 +1,20 @@
 <!doctype html>
 <html lang="en">
+
 <head>
 <title>Ingresar a MADPets</title>
 <meta charset="utf-8">    <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta http-equiv="X-UA-Compatible" content="ie=edge">
-<!--<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">-->
 <!-- Aquí CSS BOOSTRAP -->
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <!-- Main CSS -->
-<link rel="stylesheet" href="css/gen-style.css">
 <link rel="stylesheet" href="css/login-style.css">
 <!-- Font Js -->
-<link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
 <!-- Script AwesomeFonts-->
 <script src="https://use.fontawesome.com/025d1f53df.js"></script>
+
 <!-- Script validacion campos vacíos -->
 <script>
 function enviar(){
@@ -38,58 +38,60 @@ function enviar(){
 
 -->
 <body>
-<div class="container formu-log">
-<div class="row">
-    <div class="col-md-3 text-md-center">
-        
-    </div>
-    <div class="col-md-6 text-md-center">
-        <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
-            <div class="container head-log">
-                <div class="logo">
-                    <a href="index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
+    <div class="container formu-log">
+
+        <div class="row">
+
+        <div class="col-md-3 text-md-center"></div>
+
+        <div class="col-md-6 text-md-center">
+
+            <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
+                <div class="container head-log">
+                    <div class="logo">
+                        <a href="index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
+                    </div>
                 </div>
-            </div>
-            <div class="container body-log">
-                <div class="input-group">
-                           
-                    <span class="input-group-addon">
-                        <i class="fa fa-user"></i>
-                    </span>
-                    <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control" placeholder="Usuario/Correo electrónico"/>
-                    
-                </div>
-                <div class="input-group">
-                    <span class="input-group-addon">
-                        <i class="fa fa-lock"></i>
-                    </span>
-                    <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña"/>
-                </div>
-                <div class="form-group">
-                    <input type="button" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-block" onclick="enviar();" />
-                </div>
+            
+                <div class="container body-log">
+                    <div class="input-group">                          
+                        <span class="input-group-addon">
+                            <i class="fa fa-user"></i>
+                        </span>
+                        <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control" placeholder="Usuario/Correo electrónico"/>                   
+                    </div>
+
+                    <div class="input-group">
+                        <span class="input-group-addon">
+                            <i class="fa fa-lock"></i>
+                        </span>
+                        <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña"/>
+                    </div>
+                    <br />
+                    <div class="form-group">
+                        <input type="button" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-lock" onclick="enviar();" />
+                    </div>
+                </div> <!-- Fin BodyLog -->
+            </form><!--Fin formulario-->
+
                 <div class="container showhint">
                     <!--Si Usuario y contraseña no coinciden: -->
-                <?php
-                if (isset($_GET['error'])) {
-                ?>
-                <div class="alert alert-danger" role="alert">
-                    Error usuario y/o contraseña!
-                </div>
-                </div>
-                <?php
-                }
-                ?>
-                </div>
-            </div>    
-    </form>
-    </div>
-            <div class="col-md-3 text-md-center">
+                    <?php
+                    if (isset($_GET['error'])) {
+                    ?>
+                    <div class="alert alert-danger" role="alert">
+                        Error usuario y/o contraseña!       
+                    <?php
+                    }
+                    ?>
+                    </div><!--Fin alert-->        
+                </div><!--Fin showHint-->                    
+        </div> <!--Fin col-6-->
 
-            </div>
+        <div class="col-md-3 text-md-center"></div>
+        </div> <!--Fin row-->
+    </div><!--Fin container-->
 
-        </div>
-    </div>
     <footer class="footer-log">
         <div class="container">
             <div class="col-sd-12 text-md-center">
