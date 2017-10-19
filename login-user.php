@@ -41,13 +41,11 @@ function enviar(){
     <div class="container formu-log">
 
         <div class="row">
-
         <div class="col-md-3 text-md-center"></div>
-
         <div class="col-md-6 text-md-center">
 
             <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
-                <div class="container head-log">
+                <div class="container head-log col-md-6">
                     <div class="logo">
                         <a href="index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
                     </div>
@@ -87,7 +85,6 @@ function enviar(){
                     </div><!--Fin alert-->        
                 </div><!--Fin showHint-->                    
         </div> <!--Fin col-6-->
-
         <div class="col-md-3 text-md-center"></div>
         </div> <!--Fin row-->
     </div><!--Fin container-->
