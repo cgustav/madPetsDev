@@ -2,11 +2,11 @@
 session_start();
 if(isset($_SESSION['usuario'])){
 if($_SESSION['tipo']=="Administrador"){
-		header("Location: principal/admin-dev.html");
+		header("Location: principal/admin/admin-dev.html");
 	  }else if($_SESSION['tipo']=="Veterinario"){
-		header("Location: principal/vet.php");
+		header("Location: principal/veterinario/vet-dev.html");
 	  }else if($_SESSION['tipo']=="Cliente"){
-	  header("Location: principal/principal.php");
+	  header("Location: principal/cliente/cliente.php");
        }
     } 
 ?>

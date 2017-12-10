@@ -111,8 +111,8 @@ if(isset($_SESSION['usuario'])){
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
                                     <a class="dropdown-item " href="#">Mi perfil</a>
-                                    <a class="dropdown-item " href="#">Mis Documentos</a>
-                                    <a class="dropdown-item " href="#">Agenda</a>
+                                    <a class="dropdown-item " href="#">Mis Mascotas</a>
+                                    <a class="dropdown-item " href="#">Mi Agenda</a>
                                     <a class="dropdown-item " href="../cerrarsesion.php">Salir</a>
                                 </div>
                             </li>
