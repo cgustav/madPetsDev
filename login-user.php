@@ -22,12 +22,12 @@ function enviar(){
 	if(document.formLogin.nombreUsuario.value==""){
 		alert("Debe ingresar un usuario");
 		document.formLogin.nombreUsuario.focus();
-		return false(); //evitar refresh de la página, conservar datos del formulario
+		return false; //evitar refresh de la página, conservar datos del formulario
 		}
 	if(document.formLogin.pwUsuario.value==""){
 			alert("Debe ingresar una password");
 		document.formLogin.pwUsuario.focus();
-		return false();
+		return false;
 			}
 			document.formLogin.submit();
 	}
