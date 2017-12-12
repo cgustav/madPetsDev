@@ -133,6 +133,112 @@ if(isset($_SESSION['usuario'])){
             </nav>
 
         </div>
+        <!--INICIO BODY CONTENT-->
+
+        <!--Icon-->
+        <div class="row">
+            <div class="container profile-img col-md-12 text-md-center" style="margin-top:40px; margin-bottom:30px;">
+                <img src="../../images/user-rounded-icon.png" alt="user-rounded" width="200" height="200">
+            </div>
+        </div>
+        <!--corpo-->
+        <div class="container profile-form">
+            <div class="row">
+                <div class="col-md-3 text-md-center">
+
+                </div>
+                <div class="col-md-6 text-md-left">
+                    <form>
+                        <div class="form-group row">
+                            <label for="inputName" class="col-sm-5 col-form-label">Nombre</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputName" placeholder="Pedrito" 
+                            value="<?php
+                                    echo $_SESSION['usuario'];
+                                    ?>">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputApeP" class="col-sm-5 col-form-label">Apellido Paterno</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputApeP" placeholder="Engel" 
+                                value="<?php
+                                    echo $_SESSION['apellidop'];
+                                    ?>">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputApeM" class="col-sm-5 col-form-label">Apellido Materno</label>
+                            <div class="col-sm-10">
+                                <input type="text" class="form-control" id="inputApeM" placeholder="Tapia"
+                                value="<?php
+                                    echo $_SESSION['apellidom'];
+                                    ?>">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputEmail" class="col-sm-5 col-form-label">Email</label>
+                            <div class="col-sm-10">
+                            <input type="email" class="form-control" id="inputEmail" placeholder="nombre@ejemplo.com" 
+                            value="<?php
+                                    echo $_SESSION['email'];
+                                    ?>">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <div class="col-sm-6">
+                                 <a href="chng-password1.php" class="btn btn-success" role="button">Cambiar contraseña</a>
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputRut" class="col-sm-5 col-form-label">Rut</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputRut" disabled="disabled"
+                            value="<?php
+                                    echo $_SESSION['rutUsuario'];
+                                    ?>">
+                            </div>
+                            
+                            <div class="col-sm-10">
+                            <small id="passwordHelpBlock" class="form-text text-muted">
+                                *El RUT sólo puede ser asignado o modificado por personal de MADPets y este te valida como cliente dentro del sistema 
+                            </small>
+                            </div>
+                           
+                        </div>
+
+                        <!--
+                        <div class="form-group row">
+                            <label for="inputPassword" class="col-sm-5 col-form-label">Contraseña</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
+                            </div>
+                        </div>
+                        <div class="form-group row">
+                            <label for="inputPasswordConfirm" class="col-sm-5 col-form-label">Confirmar contraseña</label>
+                            <div class="col-sm-10">
+                                <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Re-ingresar contraseña">
+                            </div>
+                        </div>
+                        -->
+                        <!--//-->
+                        
+                        <div class="form-group row">
+                            <div class="col-sm-6 col-form-button">
+                                <button type="button" class="btn btn-primary" value="submit" style="margin-top:20px; padding-top:10px; padding-bottom:10px;">Actualizar Datos</button>
+                            </div>
+                        </div>                        
+                    </form>
+                </div>
+            <div class="col-md-3 text-md-center">
+
+            </div>
+            </div>
+        </div>
+
+
+
+        <!--FIN BODY CONTENT-->
 
     </header>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"

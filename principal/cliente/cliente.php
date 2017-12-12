@@ -134,6 +134,25 @@ if(isset($_SESSION['usuario'])){
 
         </div>
 
+        <!--
+        
+        -->
+        <div class="col-ms-2">
+        </div>
+        <div class="container principal-con col-ms-8">
+            <div class="jumbotron">
+                <h1 class="display-3">Reservas online!</h1>
+                <p class="lead">Ya puedes reservar tu consulta on-line en MAD Pets! No dejes para después la salud de tu mascota.</p>
+                    <hr class="my-4">
+                    <p>Reserva hasta con 24 horas de antelación tu hora online. Y recibe un descuento del 25% en el precio de la reserva.</p>
+                    <p class="lead">
+                    <a class="btn btn-primary btn-lg" href="#" role="button">Más información</a>
+                </p>
+            </div>
+        </div>
+        <div class="col-ms-2">
+        </div>
+        
     </header>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
