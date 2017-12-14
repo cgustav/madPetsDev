@@ -206,22 +206,6 @@ if(isset($_SESSION['usuario'])){
                             </div>
                            
                         </div>
-
-                        <!--
-                        <div class="form-group row">
-                            <label for="inputPassword" class="col-sm-5 col-form-label">Contraseña</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPassword" placeholder="Contraseña">
-                            </div>
-                        </div>
-                        <div class="form-group row">
-                            <label for="inputPasswordConfirm" class="col-sm-5 col-form-label">Confirmar contraseña</label>
-                            <div class="col-sm-10">
-                                <input type="password" class="form-control" id="inputPasswordConfirm" placeholder="Re-ingresar contraseña">
-                            </div>
-                        </div>
-                        -->
-                        <!--//-->
                         
                         <div class="form-group row">
                             <div class="col-sm-6 col-form-button">

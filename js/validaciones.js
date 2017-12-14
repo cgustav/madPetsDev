@@ -1,5 +1,6 @@
 var respuesta = 0;
 var numeros = "0123456789";
+var letras = "abcdefghijklmnopqrstuvwxyz";
 
     //
     //Función para verificar números |---------         ---------|
@@ -20,7 +21,7 @@ function tiene_numeros(texto) {
     //
     //Función para verificar letras |---------         ---------|
     //
-    var letras = "abcdefghijklmnopqrstuvwxyz";
+    
     function tiene_letras(texto) {
         respuesta = 0;
         texto = texto.toLowerCase();

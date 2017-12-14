@@ -135,6 +135,39 @@ if(isset($_SESSION['usuario'])){
         </div>
 
     </header>
+
+    <div class="container pets-scroll text-md-center text-xs-center">
+            <div class="row" style="margin-top:80px;">
+                
+                <div class="col-md-4 col-md-offset-3 img-responsive" >
+                        <img src="../../images/rd-phone-blue.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
+                </div>
+                <div class="col-md-4 text-md-left text-xs-left">
+                    <h1>La serena</h1>
+                    <p style="font-size:20px;">Whatsapp urgencias : (+569) 84002356</p> 
+                    <p style="font-size:20px;">Telefono contacto  : (+56)  240023</p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            </br>
+            <div class="row" style="margin-top:30px;">
+            <div class="col-md-4 col-md-offset-3 img-responsive" style="margin-top:20px;" >
+                        <img src="../../images/rd-mail-blue.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
+                </div>
+                <div class="col-md-4 text-md-left text-xs-left">
+                    <h2>Atención veterinaria</h2>
+                    <p style="font-size:20px; color:blue;">atenciones@madpets.cl</p> 
+                    <h2>Empresas</h2>
+                    <p style="font-size:20px; color:blue;">contacto.empresas@madpets.cl</p>
+                </div>
+                <div class="col-md-4">
+                </div>
+            </div>
+            
+
+<
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"

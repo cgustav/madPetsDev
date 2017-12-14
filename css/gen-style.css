@@ -135,6 +135,25 @@
         /*Google Map*/
         align-content: center;
     }
+
+    /*Para imagenes*/
+
+
+    .elemento-padre {
+	display: flex;
+	width: 500px;
+	height: 500px;
+	justify-content: center;
+	align-items: center;
+	background: #666;
+}
+
+.elemento-hijo {
+	display: flex;
+	width: 100px;
+	height: 100px;
+	background: #999;
+}
 /*Barra superior de la pagina
 .supbar {
     
