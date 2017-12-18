@@ -15,8 +15,7 @@ if(isset($_SESSION['usuario'])){
     <!-- Main CSS -->
     <link rel="stylesheet" href="../../css/vet-style.css">
     <?php
-     if(isset($_SESSION['tipo'])){
-        
+     if(isset($_SESSION['tipo']) ){
      }
      ?>
     <!-- Font Js -->
@@ -94,28 +93,39 @@ if(isset($_SESSION['usuario'])){
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
                         <li class="nav-item active">
-                            <a class="nav-link" href="#">Mascotas
+                            <a class="nav-link" href="mi-consulta.php"> Mi Consulta
                                 <span class="sr-only">(current)</span>
                             </a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mis consultas</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown-cl" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Clientes</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item " href="crea-cliente.php">Crear cliente</a>
+                                <a class="dropdown-item " href="busca-cliente.php">Buscar cliente</a>
+                            </div>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Documentos</a>
+                        <li class="nav-item dropdown">
+                            <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown-masc" data-toggle="dropdown" aria-haspopup="true"
+                                aria-expanded="false">Mascotas</a>
+                            <div class="dropdown-menu dropdown-menu-right">
+                                <a class="dropdown-item " href="ingresa-mascota.php">Ingresar mascota</a>
+                                <a class="dropdown-item " href="busca-mascota.php">Buscar mascota</a>
+                            </div>
                         </li>
+                        
                         <!--<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex"> -->
                             <li class="nav-item dropdown">
                                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
                                     aria-expanded="false">
+                                    Vet. 
                                     <?php
                                     echo $_SESSION['usuario'];
                                     ?>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item " href="#">Mi perfil</a>
-                                    <a class="dropdown-item " href="#">Mi agenda</a>
-                                    <a class="dropdown-item " href="#">Solicitudes</a>
+                                    <a class="dropdown-item " href="perfil.php">Mi perfil</a>
+                                    <a class="dropdown-item " href="mi-horario.php">Mi horario</a>
                                     <a class="dropdown-item " href="../../cerrarsesion.php">Salir</a>
                                 </div>
                             </li>
@@ -139,7 +149,7 @@ if(isset($_SESSION['usuario'])){
                 <div class="card-body">
                     <h4 class="card-title">Ambiente veterinario MADPets ya disponible!</h4>
                     <p class="card-text">Ya está disponible la nueva versión del ambiente veterinario On-line MADPets! Consulta aquí alguna de las funciones que tenemos disponibles para ti.</p>
-                    <a href="#" class="btn btn-info">Ver más</a>
+                    <a href="noticias/novedades-vetonline.php" class="btn btn-info">Ver más</a>
     </br>
                     <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>              
                 </div>
@@ -155,7 +165,7 @@ if(isset($_SESSION['usuario'])){
 </body>
 
 </html>
-<?php 
+<?php   
 }else{
 	header("Location:../../error.html");
 	} 
