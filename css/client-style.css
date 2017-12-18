@@ -1,3 +1,38 @@
+/*Head*/
+/*Body*/
+
+.pet-drop h2{
+    margin-top:30px;
+    font-weight: bold;
+    font-size: 40px;
+    color: #17c89c;
+}
+#drop{
+    margin-top:20px;
+}
+/*Tablas*/
+table {
+    margin-top: 30px;
+    font-family: arial, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+}
+
+tr:nth-child(even) {
+    background-color: #76e6ae;
+}
+.col-center{
+    float: none;
+    margin: 0 auto;
+}
+
+
 /* General */
     /* Plantilla genérica para la página principal y dependencias*/
     body{        
@@ -68,54 +103,6 @@
         text-align: center;
 
     }
-    /*Plantilla error.hmtl */
-    
-
-/* Content */
-    /*carousel*/
-    #slider-home{
-        margin-bottom: 5px;
-
-    }
-    .carousel-caption{
-        /*Para modificar el color de fondo en textos de los slides*/
-        background-color: rgba(5, 48, 49, 0.75);
-        height: 600px;
-        left: 30px;
-        top: 0;
-        padding: 30px 45px;
-        text-align: center;
-        width: 380px;
-    }
-    .carousel-caption p {
-        font-size: 17px;
-        line-height: 18px;
-    }
-    .carousel-caption h2 {
-        font-size: 30px;
-        line-height: 35px;
-    }
-    .carousel-caption h4 {
-        font-size: 20px;
-        line-height: 30px;
-        margin-top: 8px;
-    }
-    .carousel-caption img {
-        display: block;
-        max-width: 100%;
-        height: auto;
-        margin: 0 auto;
-        
-    }
-    .carousel-caption a {
-        margin-top: 20px;
-        border-radius: 0;
-        font-weight: bold;
-        color: #f8faf9;
-        border: none;
-        
-    }
-    /*Personalizacón de los separadores del body*/
     .separador-bar{
         background-color: #17c89c;
         padding-top: 25px;
@@ -130,39 +117,17 @@
         font-size: 30px;
         line-height: 25px;
     }
+    /*Plantilla error.hmtl */
     
-    .goomap{
-        /*Google Map*/
-        align-content: center;
+
+/* Content */
+    /*carousel*/
+    #slider-home{
+        margin-bottom: 5px;
+
     }
-
-    /*Para imagenes*/
-
-
-    .elemento-padre {
-	display: flex;
-	width: 500px;
-	height: 500px;
-	justify-content: center;
-	align-items: center;
-	background: #666;
-}
-
-.elemento-hijo {
-	display: flex;
-	width: 100px;
-	height: 100px;
-	background: #999;
-}
-
-
-/*Barra superior de la pagina
-.supbar {
     
-    background: #17c89c;
-    padding-bottom: 10px;
-    padding-top: 10px;
-}
-*/
 /* Footer */
 
+
+/*Footer*/

@@ -23,6 +23,9 @@ if(isset($_SESSION['usuario'])){
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Icons Js -->
     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
+    <script>
+    function  activaBoton()
+    </script>
 </head>
 
 <body>
@@ -148,7 +151,8 @@ if(isset($_SESSION['usuario'])){
 
                 </div>
                 <div class="col-md-6 text-md-left">
-                    <form>
+                <!--DIRECCIONAR A modifica-cliente.php-->
+                    <form method="post" action="mis-mascotas.php">
                         <div class="form-group row">
                             <label for="inputName" class="col-sm-5 col-form-label">Nombre</label>
                             <div class="col-sm-10">
@@ -185,12 +189,12 @@ if(isset($_SESSION['usuario'])){
                                     ?>">
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="row">
                             <div class="col-sm-6">
                                  <a href="chng-password1.php" class="btn btn-success" role="button">Cambiar contraseña</a>
                             </div>
                         </div>
-                        <div class="form-group row">
+                        <div class="row">
                             <label for="inputRut" class="col-sm-5 col-form-label">Rut</label>
                             <div class="col-sm-10">
                             <input type="text" class="form-control" id="inputRut" disabled="disabled"
@@ -208,8 +212,10 @@ if(isset($_SESSION['usuario'])){
                         </div>
                         
                         <div class="form-group row">
-                            <div class="col-sm-6 col-form-button">
-                                <button type="button" class="btn btn-primary" value="submit" style="margin-top:20px; padding-top:10px; padding-bottom:10px;">Actualizar Datos</button>
+                            <div class="col-sm-6">
+                                <!--<button type="button" id="boton-actualizar" class="btn btn-primary" value="submit" style="margin-top:20px; padding-top:10px; padding-bottom:10px;">Actualizar Datos</button>-->
+                            	<input type="submit" id="boton-actualizar" class="btn btn-primary form-button" value="Modificar datos" style="margin-top:20px; padding-top:10px; padding-bottom:10px;"> 
+                                                          
                             </div>
                         </div>                        
                     </form>

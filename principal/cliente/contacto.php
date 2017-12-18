@@ -137,36 +137,67 @@ if(isset($_SESSION['usuario'])){
     </header>
 
     <div class="container pets-scroll text-md-center text-xs-center">
-            <div class="row" style="margin-top:80px;">
+            <div class="row" style="margin-top:60px;">
                 
-                <div class="col-md-4 col-md-offset-3 img-responsive" >
+                <div class="col-md-4 col-md-offset-3 img-responsive">
                         <img src="../../images/rd-phone-blue.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
                 </div>
                 <div class="col-md-4 text-md-left text-xs-left">
-                    <h1>La serena</h1>
-                    <p style="font-size:20px;">Whatsapp urgencias : (+569) 84002356</p> 
+                    <h1 style="margin-top:20px;">La serena</h1>
+                    <p style="font-size:20px; margin-top:20px;">Whatsapp urgencias : (+569) 84002356</p> 
                     <p style="font-size:20px;">Telefono contacto  : (+56)  240023</p>
+                    <hr />
                 </div>
-                <div class="col-md-4">
-                </div>
-            </div>
-            </br>
-            <div class="row" style="margin-top:30px;">
-            <div class="col-md-4 col-md-offset-3 img-responsive" style="margin-top:20px;" >
-                        <img src="../../images/rd-mail-blue.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
-                </div>
-                <div class="col-md-4 text-md-left text-xs-left">
-                    <h2>Atención veterinaria</h2>
-                    <p style="font-size:20px; color:blue;">atenciones@madpets.cl</p> 
-                    <h2>Empresas</h2>
-                    <p style="font-size:20px; color:blue;">contacto.empresas@madpets.cl</p>
-                </div>
-                <div class="col-md-4">
+                <div class="col-md-4 col-md-offset-3">
+                
                 </div>
             </div>
             
+            <div class="row" style="margin-top:40px;">
+                <div class="col-md-4 col-md-offset-3 img-responsive" style="margin-top:20px;" >
+                    <img src="../../images/rd-mail-blue.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
+                </div>
 
-<
+                <div class="col-md-4 text-md-left text-xs-left">
+                    <h2 style="margin-top:20px;">Atención veterinaria</h2>
+                    <p style="font-size:20px; color:blue;">atenciones@madpets.cl</p> 
+                    <h2>Empresas</h2>
+                    <p style="font-size:20px; color:blue;">contacto.empresas@madpets.cl</p>
+                    <hr />
+                </div>
+
+                <div class="col-md-4">
+                </div>
+            </div>
+            <div class="row" style="margin-top:40px;"> 
+            <div class="col-md-4 col-md-offset-3 img-responsive" style="margin-top:20px;" >
+                    <img src="../../images/rd-geo-client.png" class="img-responsive" alt="mascota-profile" width="180" height="180">
+                </div>
+
+                <div class="col-md-4 text-md-left text-xs-left">
+                    <h2 style="margin-top:20px;">Horario de Atención</h2>
+                    <p style="font-size:18px; font-weight:bold;">Lunes a viernes</p>  <p style="font-size:18px; color:green;">9:00 a 20:00 hrs
+                    <p style="font-size:18px; font-weight:bold;">Sábados        </p>  <p style="font-size:18px; color:green;">9:00 a 14:30 hrs  
+                    <h2 style="margin-top:10px">Dirección</h2>
+                    <p style="font-size:20px; font-weight:bold;">Avenida Emeterio Ureta #8766 La colina el Pino</p>
+                    <p>
+                    <button class="btn btn-primary" type="button" data-toggle="collapse" data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                    Ver mapa
+                    </button>
+                    </p>
+                    <div class="collapse" id="collapseExample">
+                        <div class="card card-body">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d1729.30417410764!2d-71.25643739821919!3d-29.904383802198026!3m2!1i1024
+                    !2i768!4f13.1!3m3!1m2!1s0x0%3A0x42ede8b0d3374958!2sJardin+del+Coraz%C3%B3n!5e0!3m2!1ses!2scl!4v1507735250460"
+                    width="100%" height="270" frameborder="0" style="border:0" allowfullscreen></iframe>
+                        </div>
+                    </div>
+                    <hr />
+                </div>
+
+                <div class="col-md-4">
+                </div>
+            </div>
     </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>

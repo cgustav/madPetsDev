@@ -131,6 +131,22 @@ if(isset($_SESSION['usuario'])){
         </div>
 
     </header>
+    <div class="row">
+        <div class="col-md-1"></div>
+        <div class="col-md-10">
+            <div class="card mb-3">
+                <img class="card-img-top" src="../../images/sc-vet-rectangle.png" alt="Card image cap">
+                <div class="card-body">
+                    <h4 class="card-title">Ambiente veterinario MADPets ya disponible!</h4>
+                    <p class="card-text">Ya está disponible la nueva versión del ambiente veterinario On-line MADPets! Consulta aquí alguna de las funciones que tenemos disponibles para ti.</p>
+                    <a href="#" class="btn btn-info">Ver más</a>
+    </br>
+                    <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>              
+                </div>
+            </div>
+        </div>
+        <div class="col-md-1"></div>        
+    </div>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
