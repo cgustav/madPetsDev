@@ -10,6 +10,7 @@ if(isset($_SESSION['usuario'])){
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Principal MADPets</title>
+    
     <!-- BOOTSTRAP CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <!-- Main CSS -->
@@ -23,6 +24,10 @@ if(isset($_SESSION['usuario'])){
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Icons Js -->
     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
+     <!--PHP INCLUDES-->
+    <?php
+    Include ("consultas/consulta-mascotas.php");
+    ?>
 </head>
 
 <body>
@@ -151,7 +156,8 @@ if(isset($_SESSION['usuario'])){
                 <div class="container pets-scroll-content col-md-3">
                     
                 </div>
-                <div class="container pets-scroll-content col-md-6" >     
+                <div class="container pets-scroll-content col-md-6" >    
+                    <!-- 
                     <div class="dropdown show">
                         <a class="btn btn-info dropdown-toggle btn-lg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             Selecciona mascota
@@ -161,12 +167,25 @@ if(isset($_SESSION['usuario'])){
                             <a class="dropdown-item" href="#">Perro rayo</a>
                             <a class="dropdown-item" href="#">Gato ton</a>
                         </div>
+                    </div>
+                    -->
+                
+                <!-- dropdown de buttons -->
+                    <div class="dropdown">
+                        <button class="btn btn-info dropdown-toggle btn-lg" type="button" id="dropdownMascotas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            Seleccionar mascota
+                        </button>
+                        <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
+                           <?php
+                            
+                           ?>
                         </div>
-                </div>
+                    </div>
+                </div>        
                 <div class="container pets-scroll-content col-md-3 text-md-left">
                     <!--<button id="buscar-mascota"class="btn btn-success">Mostrar datos</button>-->
                 </div>
-
+                
             </div>
             <div class="row text-md-center text-xs-center" style="margin-top:30px;">
                 <div class="col-md-3">
