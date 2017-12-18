@@ -9,12 +9,14 @@ if(isset($_SESSION['usuario'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="../../images/rd_fav_madpets.png"/>
+
     <title>Principal MADPets</title>
-    
     <!-- BOOTSTRAP CSS-->
     <link rel="stylesheet" href="../../css/bootstrap.min.css">
     <!-- Main CSS -->
-    <link rel="stylesheet" href="../../css/gen-style.css">
+    <link rel="stylesheet" href="../../css/client-style.css">
+    
     <?php
      if(isset($_SESSION['tipo'])){
         
@@ -24,10 +26,41 @@ if(isset($_SESSION['usuario'])){
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Icons Js -->
     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
-     <!--PHP INCLUDES-->
-    <?php
-    Include ("consultas/consulta-mascotas.php");
-    ?>
+    <script>
+    function buscaMascota(valor){
+        var parametros = {
+                "valorM" : valor
+        };
+        $.ajax({
+                data:  parametros, //datos que se envian a traves de ajax
+                url:   'consulta-mascota.php', //archivo que recibe la peticion
+                type:  'post', //método de envio
+                beforeSend: function () {
+                        $("#pruebas").html("Procesando, espere por favor...");
+                },
+                success:  function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+                        $("#pruebas").html(response);
+                }
+        });
+}
+    
+    function imprimeFicha(valor){
+        var parametros = {
+                "valorMa" : valor
+        };
+        $.ajax({
+                data:  parametros, //datos que se envian a traves de ajax
+                url:   'ficha-mascota.php', //archivo que recibe la peticion
+                type:  'post', //método de envio
+                beforeSend: function () {
+                        $("#nuevatabla").html("<center><h1 style='color: gray;'>Procesando, espere por favor...</h1></center>");
+                },
+                success:  function (response) { //una vez que el archivo recibe el request lo procesa y lo devuelve
+                        $("#nuevatabla").html(response);
+                }
+        });
+    }
+    </script>
 </head>
 
 <body>
@@ -136,11 +169,17 @@ if(isset($_SESSION['usuario'])){
                     </form>
                 </div>
             </nav>
-
         </div>
-
     </header>
-        <div class="container pets-scroll text-md-center text-xs-center">
+     <!--INICIO DE CONTENIDO-->
+
+
+
+
+
+
+
+     <div class="container pets-scroll text-md-center text-xs-center">
             <div class="row">
                 <div class="col-md-4">
                 </div>
@@ -156,118 +195,36 @@ if(isset($_SESSION['usuario'])){
                 <div class="container pets-scroll-content col-md-3">
                     
                 </div>
-                <div class="container pets-scroll-content col-md-6" >    
-                    <!-- 
-                    <div class="dropdown show">
-                        <a class="btn btn-info dropdown-toggle btn-lg" href="#" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                            Selecciona mascota
-                        </a>
-                        <div class="dropdown-menu" aria-labelledby="dropdownMenuLink">
-                            <a class="dropdown-item" href="#">Perro cachupin</a>
-                            <a class="dropdown-item" href="#">Perro rayo</a>
-                            <a class="dropdown-item" href="#">Gato ton</a>
-                        </div>
-                    </div>
-                    -->
-                
+                <div class="container pets-scroll-content col-md-6" >
                 <!-- dropdown de buttons -->
                     <div class="dropdown">
-                        <button class="btn btn-info dropdown-toggle btn-lg" type="button" id="dropdownMascotas" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <button class="btn btn-info dropdown-toggle btn-lg" type="button" id="dropdownMascotas"
+                         data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" onclick="buscaMascota(1);">
                             Seleccionar mascota
                         </button>
                         <div class="dropdown-menu" aria-labelledby="dropdownMenu2">
-                           <?php
-                            
-                           ?>
+                        <div id="pruebas">
+                        
+                        </div>
                         </div>
                     </div>
                 </div>        
                 <div class="container pets-scroll-content col-md-3 text-md-left">
                     <!--<button id="buscar-mascota"class="btn btn-success">Mostrar datos</button>-->
                 </div>
-                
             </div>
             <div class="row text-md-center text-xs-center" style="margin-top:30px;">
                 <div class="col-md-3">
                 </div>
-                <div class="col-md-6 text-sm-left">
-                    <div class="panel panel-primary">
-                        <div class="panel-heading">
-                            <h3 class="panel-title" style="color: green; font-weight: bold;">Ficha de mascota</h3>
-                        </div>
-                        <div class="panel-body">
-                            <form>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <label for="outNombre">Nombre</label>
-                                        <input type="text" id="outNombre" class="form-control" placeholder="Cachupin" disabled="disabled">
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-4">
-                                        <label for="outEspecie">Especie</label>
-                                        <input type="text" id="outEspecie" class="form-control" placeholder="Canis Lupus" disabled="disabled">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="outRaza">Raza</label>
-                                        <input type="text" id="outRaza" class="form-control" placeholder="Pastor Alemán" disabled="disabled">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="outSexo">Sexo</label>
-                                        <input type="text" id="outSexo" class="form-control" placeholder="Macho" disabled="disabled">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <label for="outDescripcion">Descripción</label>
-                                        <textarea class="form-control" id="outDescripcion" rows="2" placeholder="Pelaje fino color marrón y grisaceo"disabled="disabled"></textarea>
-                                    </div>
-                                </div>
-                                <div class="form-row">
-                                    <div class="form-group col-md-6">
-                                        <label for="outNacimiento">Nacimiento</label>
-                                        <input type="text" id="outNacimiento" class="form-control" placeholder="06-diciembre-2016" disabled="disabled">
-                                    </div>
-                                    <div class="form-group col-md-4">
-                                        <label for="outVacunas">Vacunaciones</label>
-                                        <input type="text" id="outVacunas" class="form-control" placeholder="Al día" disabled="disabled">
-                                    </div>
-                                    <div class="form-group col-md-2">
-                                        <label for="outEsteril">Estéril</label>
-                                        <input type="text" id="outEsteril" class="form-control" placeholder="Si" disabled="disabled">
-                                    </div>
-                                </div>
-                                <div class="form-group row">
-                                    <div class="col-sm-12">
-                                        <label for="outDescripcion">Afecciones</label>
-                                        <textarea class="form-control" id="outAfecciones" rows="3" placeholder="Problemas sanguíneos" disabled="disabled"></textarea>
-                                    </div>
-                                </div>
-                                
-                                <div class="row" style="margin-top: 20px;">
-                                    <div class="col-sm-10 text-sm-left text-md-left">
-                                        <a href="#" class="btn btn-warning">Imprimir</a>
-                                    </div>
-                                </div>
-                                <div class="row" style="margin-top: 20px;">
-                                    <div class="col-sm-10 text-sm-left text-md-left">
-                                        <a href="vacunas-mascota.php" class="btn btn-success">Ver vacunas</a>
-                                    </div>
-                                </div>
-                                
-                                
-                            </form>
-                        </div>
-                    </div>
+                <div class='col-md-6 text-sm-left'>
+                <div id='nuevatabla'>
                 </div>
-                
+                </div
                 <div class="col-md-3">
                 </div>
                 </div>
         </div>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
-        crossorigin="anonymous"></script>
+    <script src="../../js/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4"
         crossorigin="anonymous"></script>
     <script src="../../js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>

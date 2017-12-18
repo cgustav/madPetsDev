@@ -191,6 +191,15 @@ if(isset($_SESSION['usuario'])){
                                     ?>">
                             </div>
                         </div>
+                        <div class="form-group row">
+                            <label for="inputFono" class="col-sm-5 col-form-label">Fono de contacto</label>
+                            <div class="col-sm-10">
+                            <input type="text" class="form-control" id="inputFono" disabled="disabled" 
+                            value="(+569) <?php
+                                    echo $_SESSION['fono'];
+                                    ?>">
+                            </div>
+                        </div>
                         <div class="row">
                             <div class="col-sm-6">
                                  <a href="chng-password1.php" class="btn btn-success" role="button">Cambiar contraseña</a>

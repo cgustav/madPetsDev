@@ -25,10 +25,7 @@ if(isset($_SESSION['usuario'])){
     <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
     <!-- Icons Js -->
     <script src="https://use.fontawesome.com/025d1f53df.js"></script>
-    <!--PHP INCLUDES-->
-    <?php
-    Include ("funciones.php");
-    ?>
+   
 </head>
 
 <body>
