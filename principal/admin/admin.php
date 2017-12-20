@@ -93,20 +93,39 @@ if(isset($_SESSION['usuario'])){
 
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <ul class="navbar-nav mr-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="#">Usuarios
-                                <span class="sr-only">(current)</span>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Mascotas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Consultas</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Documentos</a>
-                        </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Usuarios
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item " href="crud/buscar-usuario.php">Buscar usuarios</a>
+                                    <a class="dropdown-item " href="crud/crear-usuario.php">Crear usuario</a>
+                                    <a class="dropdown-item " href="crud/listar-usuarios.php">Lista usuarios</a>
+                                </div>
+                            </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Mascotas
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item " href="crud/buscar-usuario.php">Buscar mascotas</a>
+                                    <a class="dropdown-item " href="crud/ingresar-mascota.php">Ingresar mascota</a>
+                                    <a class="dropdown-item " href="crud/listar-mascotas.php">Lista mascotas</a>
+                                </div>
+                            </li>
+                        <li class="nav-item dropdown">
+                                <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
+                                    aria-expanded="false">
+                                    Consultas
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right">
+                                    <a class="dropdown-item " href="crud/generar-consulta.php">Generar consulta</a>
+                                    <a class="dropdown-item " href="crud/buscar-consulta.php">Buscar consulta</a>
+                                </div>
+                            </li>
+                        
                         <!--<ul class="navbar-nav flex-row ml-md-auto d-none d-md-flex"> -->
                             <li class="nav-item dropdown">
                                 <a class="nav-item nav-link dropdown-toggle mr-md-2" href="#" id="nav-dropdown" data-toggle="dropdown" aria-haspopup="true"
@@ -116,9 +135,8 @@ if(isset($_SESSION['usuario'])){
                                     ?>
                                 </a>
                                 <div class="dropdown-menu dropdown-menu-right">
-                                    <a class="dropdown-item " href="#">Mi perfil</a>
-                                    <a class="dropdown-item " href="#">Panel admin</a>
-                                    <a class="dropdown-item " href="#">Mi Agenda</a>
+                                    <a class="dropdown-item " href="perfil.php">Mi perfil</a>
+                                    <a class="dropdown-item " href="panel-admin.php">Panel administrador</a>
                                     <a class="dropdown-item " href="../../cerrarsesion.php">Salir</a>
                                 </div>
                             </li>

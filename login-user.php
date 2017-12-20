@@ -54,24 +54,31 @@ function enviar(){
             <form id="formLogin" name ="formLogin" action="procesa-login.php" class="form-horizontal" method="POST">
                 <div class="container head-log col-md-6">
                     <div class="logo">
-                        <a href="index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
+                        <a href="../index.html"><img src="images/madpets2ndlogo.png" tag="madpets png"></a>
                     </div>
                 </div>
             
-                <div class="container body-log">
-                    <div class="input-group">                          
+                <div class="container body-log text-sm-left">
+                    <div class="input-group">    
+                   <!-- <div class="input-group"> --> 
+                       <div class="col-md-6">                        
                         <span class="input-group-addon">
                             <i class="fa fa-user"></i>
                         </span>
-                        <input type="text" name="nombreUsuario" id="nombreUsuario" class="form-control" placeholder="Usuario/Correo electrónico"/>                   
+                        
+                        <input id="nombreUsuario" type="text" name="nombreUsuario"  class="form-control" placeholder="Usuario/Correo electrónico"/>                   
+                        </div>
                     </div>
-
-                    <div class="input-group">
-                        <span class="input-group-addon">
-                            <i class="fa fa-lock"></i>
-                        </span>
-                        <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña"/>
-                    </div>
+                      
+                        <div class="input-group">
+                            <span class="input-group-addon">
+                                <i class="fa fa-lock"></i>
+                            </span>
+                            <div class="col-md-6">
+                                <input type="password" name="pwUsuario" id="pwUsuario" class="form-control" placeholder="Contraseña" onkeypress="if (event.keyCode == 13) enviar();"/>
+                            </div>
+                        </div>   
+                    
                     <br />
                     <div class="form-group">
                         <input type="button" id="Ingresar" name="Ingresar" value="Ingresar" class="btn btn-success btn-lock" onclick="enviar();" />
